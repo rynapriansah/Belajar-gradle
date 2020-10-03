@@ -1,0 +1,31 @@
+task namaaction 
+
+namaaction{
+    doLast{
+        println 'Action pertama ditambahkan kedalam task'
+    }
+}
+
+namaaction {
+    doLast{
+        println 'Action kedua ditambahkan kedalam task'
+    }
+}
+
+task konfigurasi 
+
+konfigurasi {
+    doLast{
+        println 'checkin network configuration'
+    }
+}
+
+konfigurasi {
+    doLast{
+        println 'conection in server'
+    }
+}
+
+konfigurasi {
+    println 'setting up conection request'
+}

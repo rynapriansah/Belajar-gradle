@@ -1,0 +1,12 @@
+task exractDatabase {
+    doLast {
+        println 'Extracting database metadata...'
+    }
+}
+
+exractDatabase {
+    doFirst {println 'Connection to the database'}
+    doFirst {println 'setting up connetion to the database'}
+}
+
+
